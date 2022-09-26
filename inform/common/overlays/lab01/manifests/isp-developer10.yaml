@@ -1,0 +1,12 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: isp-developer10
+rules:
+- apiGroups:
+  - apps.openshift.io
+  - ""
+  resources:
+  - deploymentconfigs/scale
+  verbs:
+  - update
