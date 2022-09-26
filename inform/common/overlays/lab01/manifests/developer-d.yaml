@@ -53,3 +53,10 @@ rules:
   - deploymentconfigs/scale
   verbs:
   - update
+- apiGroups:
+  - apps.openshift.io
+  - ""
+  resources:
+  - deploymentconfigs/scale
+  verbs:
+  - update
