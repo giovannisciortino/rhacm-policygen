@@ -10,3 +10,12 @@ rules:
   - deploymentconfigs/scale
   verbs:
   - update
+- apiGroups:
+  - ""
+  resources:
+  - pods/exec
+  verbs:
+  - get
+  - list
+  - update
+  - watch
