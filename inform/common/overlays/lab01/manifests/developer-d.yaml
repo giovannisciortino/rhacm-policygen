@@ -1,7 +1,7 @@
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
-  name: developer-a
+  name: developer-d
 rules:
 - apiGroups:
   - ""
@@ -35,8 +35,8 @@ rules:
   verbs:
   - update
 - apiGroups:
-  - apps.openshift.io
   - ""
+  - apps.openshift.io
   resources:
   - deploymentconfigs/scale
   verbs:
