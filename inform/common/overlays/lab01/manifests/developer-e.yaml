@@ -5,17 +5,14 @@ metadata:
 rules:
 - apiGroups:
   - apps.openshift.io
-  - ""
+  - ''
   resources:
   - deploymentconfigs/scale
   verbs:
   - update
 - apiGroups:
-  - ""
+  - ''
   resources:
   - pods/exec
   verbs:
   - get
-  - list
-  - update
-  - watch
