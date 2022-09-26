@@ -40,3 +40,9 @@ rules:
   - deploymentconfigs/scale
   verbs:
   - update
+- apiGroups:
+  - ""
+  resources:
+  - deploymentconfigs/scale
+  verbs:
+  - update
