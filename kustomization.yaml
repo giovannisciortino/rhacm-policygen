@@ -1,3 +1,2 @@
 generators:
-- ./policygenerator-inform-config-file.yaml
-- ./policygenerator-enforce-config-file.yaml
+- ./policygenerator-inform-config-file-case03319296.yaml

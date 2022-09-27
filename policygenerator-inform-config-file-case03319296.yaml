@@ -1,0 +1,21 @@
+apiVersion: policy.open-cluster-management.io/v1
+kind: PolicyGenerator
+metadata:
+  name: policy-gen-inform-gsciorti
+policyDefaults:
+  categories:
+    - ACM Configuration Management
+  controls:
+    - ACM Baseline Configuration
+  namespace: policies
+  remediationAction: inform
+  severity: medium
+policies:
+################### POLICY APPLIED TO SINGLE CLUSTERS ########################
+- name: pol-gen-inform-lab01-configurations-gsciorti
+  disabled: false
+  manifests:
+    - path: ./inform/common/overlays/lab01/manifests
+  placement:
+    clusterSelectors:
+      name: local-cluster
