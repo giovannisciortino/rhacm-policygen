@@ -1,7 +1,7 @@
 apiVersion: policy.open-cluster-management.io/v1
 kind: PolicyGenerator
 metadata:
-  name: policy-gen-inform-gsciorti
+  name: policy-gen-inform-case03319296
 policyDefaults:
   categories:
     - ACM Configuration Management
@@ -12,10 +12,10 @@ policyDefaults:
   severity: medium
 policies:
 ################### POLICY APPLIED TO SINGLE CLUSTERS ########################
-- name: pol-gen-inform-lab01-configurations-gsciorti
+- name: pol-gen-inform-lab01-configurations-case03319296
   disabled: false
   manifests:
-    - path: ./inform/common/overlays/lab01/manifests
+    - path: ./inform-manifests-case03319296
   placement:
     clusterSelectors:
       name: local-cluster
