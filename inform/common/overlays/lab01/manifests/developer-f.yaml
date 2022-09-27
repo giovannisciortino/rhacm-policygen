@@ -303,7 +303,6 @@ rules:
   - view
 - apiGroups:
   - apps.openshift.io
-  - ""
   resources:
   - deploymentconfigs
   - deploymentconfigs/scale
@@ -313,7 +312,6 @@ rules:
   - watch
 - apiGroups:
   - apps.openshift.io
-  - ""
   resources:
   - deploymentconfigs/log
   - deploymentconfigs/status
@@ -323,7 +321,6 @@ rules:
   - watch
 - apiGroups:
   - image.openshift.io
-  - ""
   resources:
   - imagestreamimages
   - imagestreammappings
@@ -335,7 +332,6 @@ rules:
   - watch
 - apiGroups:
   - image.openshift.io
-  - ""
   resources:
   - imagestreams/status
   verbs:
@@ -344,14 +340,12 @@ rules:
   - watch
 - apiGroups:
   - project.openshift.io
-  - ""
   resources:
   - projects
   verbs:
   - get
 - apiGroups:
   - quota.openshift.io
-  - ""
   resources:
   - appliedclusterresourcequotas
   verbs:
@@ -360,7 +354,6 @@ rules:
   - watch
 - apiGroups:
   - route.openshift.io
-  - ""
   resources:
   - routes
   verbs:
@@ -369,7 +362,6 @@ rules:
   - watch
 - apiGroups:
   - route.openshift.io
-  - ""
   resources:
   - routes/status
   verbs:
@@ -378,7 +370,6 @@ rules:
   - watch
 - apiGroups:
   - template.openshift.io
-  - ""
   resources:
   - processedtemplates
   - templateconfigs
@@ -390,7 +381,6 @@ rules:
   - watch
 - apiGroups:
   - build.openshift.io
-  - ""
   resources:
   - buildlogs
   verbs:
