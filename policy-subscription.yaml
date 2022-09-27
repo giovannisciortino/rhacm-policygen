@@ -6,7 +6,7 @@ metadata:
 apiVersion: app.k8s.io/v1beta1
 kind: Application
 metadata:
-  name: policy-generator-gsciorti
+  name: policy-generator-case03319296
   namespace: policy-generator
 spec:
   componentKinds:
@@ -18,14 +18,14 @@ spec:
       - key: app
         operator: In
         values:
-          - policy-generator-gsciorti
+          - policy-generator-case03319296
 ---
 apiVersion: apps.open-cluster-management.io/v1
 kind: Channel
 metadata:
   annotations:
     apps.open-cluster-management.io/reconcile-rate: high
-  name: policy-generator-gsciorti
+  name: policy-generator-case03319296
   namespace: policy-generator
 spec:
   type: Git
@@ -39,8 +39,8 @@ metadata:
     apps.open-cluster-management.io/git-path: /
     apps.open-cluster-management.io/reconcile-option: merge
   labels:
-    app: policy-generator-gsciorti
-  name: policy-generator-subscription-gsciorti
+    app: policy-generator-case03319296
+  name: policy-generator-subscription-case03319296
   namespace: policy-generator
 spec:
   allow:
@@ -50,18 +50,18 @@ spec:
     - apiVersion: apps.open-cluster-management.io/v1
       kinds:
         - PlacementRule
-  channel: policy-generator/policy-generator-gsciorti
+  channel: policy-generator/policy-generator-case03319296
   placement:
     placementRef:
       kind: PlacementRule
-      name: policy-generator-placement-gsciorti
+      name: policy-generator-placement-case03319296
 ---
 apiVersion: apps.open-cluster-management.io/v1
 kind: PlacementRule
 metadata:
   labels:
-    app: policy-generator-gsciorti
-  name: policy-generator-placement-gsciorti
+    app: policy-generator-case03319296
+  name: policy-generator-placement-case03319296
   namespace: policy-generator
 spec:
   clusterConditions:
